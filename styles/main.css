@@ -1,0 +1,117 @@
+@import url('./reset.css');
+
+.container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+/*start style user input info*/
+.userInfo {
+    width: 50%;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.inputField {
+    width: 90%;
+    height: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    text-indent: 10px;
+    outline: none;
+}
+
+input:focus {
+    border: 1px solid lightskyblue;
+    box-shadow: 0 0 10px lightskyblue;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+#btnAddUser,
+#edit-user {
+    width: 120px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid green;
+    border-radius: 5px;
+    color: green;
+    cursor: pointer;
+}
+
+#btnAddUser:hover,
+#edit-user:hover {
+    background-color: green;
+    color: white;
+    box-shadow: 0 0 10px green;
+}
+
+/*end style user input info*/
+/*start style user info in a table*/
+.userShowInfo {
+    width: 50%;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.list {
+    width: 90%;
+    height: 50px;
+    padding: 20px;
+    line-height: 50px;
+    margin-top: 10px;
+}
+
+thead {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    font-weight: bold;
+}
+
+.line {
+    border-bottom: 1px solid gray;
+}
+
+.edit,
+#delete {
+    width: 60px;
+    height: 30px;
+    background-color: rgba(255, 217, 0, 0.815);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit:hover {
+    background-color: rgba(204, 158, 6, 0.829);
+    box-shadow: 0 0 10px rgba(204, 158, 6, 0.829);
+}
+
+#delete {
+    background-color: brown;
+    color: white;
+}
+
+#delete:hover {
+    background-color: rgb(133, 27, 27);
+    box-shadow: 0 0 10px rgb(133, 27, 27);
+}
+
+/*end style user info in a table*/
+.hide {
+    display: none;
+}

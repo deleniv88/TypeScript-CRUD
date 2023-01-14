@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="userInfo">
+            <form id="form">
+                <!--user login-->
+                <div class="inputField">
+                    <label for="userLogin">Login</label>
+                    <input type="text" name="userLogin" id="userLogin" placeholder="Enter login" autocomplete="off">
+                </div>
+                <!--user password-->
+                <div class="inputField">
+                    <label for="userPassword">Password</label>
+                    <input type="text" name="userPassword" id="userPassword" placeholder="Enter password"
+                        autocomplete="off">
+                </div>
+                <!--user email-->
+                <div class="inputField">
+                    <label for="userEmail">Email</label>
+                    <input type="text" name="userEmail" id="userEmail" placeholder="Enter email" autocomplete="off">
+                </div>
+                <button type="submit" id="btnAddUser">Add user</button>
+            </form>
+            <!--btn Edit user-->
+            <button id="edit-user" class="hide button">Edit user</button>
+        </div>
+        <div class="userShowInfo">
+            <table class="list">
+                <thead class="thead-style">
+                    <tr>
+                        <th>#</th>
+                        <th>Login</th>
+                        <th>Password</th>
+                        <th>Email</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <!--user information-->
+                <tbody class="style" id="user">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
